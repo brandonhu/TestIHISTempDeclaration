@@ -1,0 +1,27 @@
+<WebElements>
+<!-- BAT configuration for web driver, sync timing and web locators version 1.0 -->
+<!-- web driver settings -->
+	<iewebdriverpath>\\drivers\\IEDriverServer.exe</iewebdriverpath>
+	<edgewebdriverpath>\\drivers\\MicrosoftWebDriver.exe</edgewebdriverpath>
+	<chromewebdriverpath>\\drivers\\chromedriver.exe</chromewebdriverpath>
+<!-- wait time settings -->
+	<impWaitTime>15</impWaitTime><!-- in seconds wait time for locating web elements -->
+	<expWaitTime>60</expWaitTime><!-- in seconds wait time for conditional locating web elements-->
+	<waitAlertTime>5</waitAlertTime><!-- in second for non web-based pop out-->
+	<!--<loginWaitTime>0 60000</loginWaitTime>in millisecond wait time for tester to login via window authentication -->
+	<waitLocationLoadTime>3000</waitLocationLoadTime>
+<!-- login web locators 
+xpath syntax: tagName[@attribute='value']//tagName 
+css syntax: tagName[attribute='value']
+-->
+	<tc1_loc1>//*[@id='5e3baec6c29ac50011eb76d4']</tc1_loc1><!-- email id -->
+	<tc1_loc2>//*[@id='5eb648cc03c54800112f3c48']//div[1]//input</tc1_loc2><!-- location input drop down-->
+	<tc1_loc3>//*[@id="5eb648cc03c54800112f3c48"]//div[2]//div//div//div[2]//div</tc1_loc3><!-- location item -->
+	<tc1_loc4>//*[@id="5eb648cc03c54800112f3c48"]/div[1]/div/span[2]</tc1_loc4><!-- location text value -->
+	<tc1_loc5>//*[@id='5e3bef87c29ac50011eb96b2']</tc1_loc5> <!-- temperature -->
+	<tc1_loc6>//*[@id="radio5e3bf70bae17b00011e6e682"]//div[1]//div</tc1_loc6> <!-- radio button to indicate you are well or not -->
+	<tc1_loc7a>//*[@id="radio5e4d51fc66472d0011c46300"]//div[1]//div</tc1_loc7a> <!-- AM or PM session -->
+	<tc1_loc7b>//*[@id="radio5e4d51fc66472d0011c46300"]//div[2]//div</tc1_loc7b><!-- PM session -->
+	<tc1_loc8>//*[@id="form-submit"]//div//button</tc1_loc8> <!-- submit button -->
+	<tc1_loc9>//*[@id='end-page-btn-link']//p//span[2]</tc1_loc9>
+</WebElements>

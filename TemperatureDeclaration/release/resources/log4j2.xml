@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" strict="true">
+	<Properties>
+		<Property name="basePath">./logs</Property><!-- set the basepath variable use below -->
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<!-- set the file pattern as zip format to backup the logs -->
+		<RollingFile name="File" filename="${basePath}/tempDeclarationForm.log" filePattern="${basePath}/tempDeclarationForm_%d{yyyy_MM_dd}.log.zip">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500 KB" /> <!-- log file reach 500kb, a new log file will be created -->
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+	<!-- if additivity is not set to false to ensure only capturing logs from epossuite class -->
+		<Logger name="test.DeclareTempReadingTest" level="trace" additivity="false">
+			<AppenderRef ref="Console" /> <!--uncomment for logging to capture at the console level ref="Console" /> -->
+			<AppenderRef ref="File" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="Console" /> <!--uncomment for logging to capture at the console level ref="Console" /> -->
+		</Root>
+	</Loggers>
+</Configuration>

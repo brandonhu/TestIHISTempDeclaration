@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/selenium/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="lib/selenium/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="lib/log4j/log4j-api-2.12.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j/log4j-core-2.12.0.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/commons-compress-1.19.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/ooxml-schemas-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/apoi/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/testNG/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="lib/reportNG/guice-4.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/reportNG/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/reportNG/velocity-1.7-dep.jar"/>
+	<classpathentry kind="lib" path="lib/reportNG/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="lib/commonConfig/commons-configuration-1.10.jar"/>
+	<classpathentry kind="lib" path="lib/commonConfig/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commonConfig/commons-logging-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commonIO/commons-io-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/extentReport/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="lib/extentReport/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="lib/extentReport/rxjava-3.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/extentReport/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
